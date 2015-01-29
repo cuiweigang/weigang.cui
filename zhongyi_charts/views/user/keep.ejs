@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include("../layout/head.ejs") %>
+</head>
+<body>
+<%- include("../layout/nav.ejs") %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2" role="complementary">
+            <%- include("../layout/user_left_nav.ejs") %>
+        </div>
+        <div class="col-md-10" role="main">
+
+            <!--图表-->
+            <div id="container" style="min-width:700px;height:400px"></div>
+        </div>
+
+        <script type="text/javascript">
+            $(function () {
+                $('#container').highcharts({
+                    chart: {
+                        type: 'bar'
+                    },
+                    title: {
+                        text: '近30天用户留存率'
+                    },
+                    xAxis: {
+                        categories: <%- JSON.stringify(result.categorys)%>
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: '留存周期'
+                        }
+                    },
+                    legend: {
+                        backgroundColor: '#FFFFFF',
+                        reversed: true
+                    },
+                    plotOptions: {
+                        series: {
+                            stacking: 'normal'
+                        }
+                    },
+                    series: [{
+                        name: '30日留存',
+                        data:<%- JSON.stringify(result.thirty)%>
+                    }, {
+                        name: '7日留存',
+                        data:<%- JSON.stringify(result.seven)%>
+                    }, {
+                        name: '3日留存',
+                        data:<%- JSON.stringify(result.third)%>
+                    }, {
+                        name: '次日留存',
+                        data: <%- JSON.stringify(result.morrow)%>
+                    }, {
+                        name: '注册日留存',
+                        data: <%- JSON.stringify(result.day)%>
+                    }]
+                });
+            });
+        </script>
+    </div>
+</div>
+
+
+</body>
+</html>

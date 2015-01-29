@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include("../layout/head.ejs") %>
+</head>
+<body>
+<%- include("../layout/nav.ejs") %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2" role="complementary">
+            <%- include("../layout/order_left_nav.ejs") %>
+        </div>
+
+
+        <div class="col-md-10" role="main">
+            <div id="container" style="min-width:700px;height:400px"></div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#container').highcharts({
+            title: {
+                text: '近30天订单',
+                x: -20 //center
+            },
+            subtitle: {
+                text: '',
+                x: -20
+            },
+            xAxis: {
+                categories: <%- categorys%>
+            },
+            yAxis: {
+                title: {
+                    text: 'Temperature ()'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: ''
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{
+                name: '全部订单',
+                data: <%- allorder%>
+            }, {
+                name: '取消订单',
+                data: <%- cancelOrder%>
+            }, {
+                name: '有效订单',
+                data: <%- validOrder%>
+            }]
+        });
+    });
+</script>
+<%- include("../layout/footer.ejs") %>
+
+</body>
+</html>
+
