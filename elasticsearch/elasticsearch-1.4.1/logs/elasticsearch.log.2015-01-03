@@ -1,0 +1,1458 @@
+[2015-01-03 18:32:37,196][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@54e0eda5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:32:37,197][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@54e0eda5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:32:37,197][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@54e0eda5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:32:37,196][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@54e0eda5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:32:37,197][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@54e0eda5]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:32:37,199][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 18:41:41,756][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3863f03a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:41:41,757][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3863f03a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:41:41,756][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3863f03a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:41:41,756][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3863f03a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:41:41,757][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3863f03a]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:41:41,757][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 18:42:15,947][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@12de9e85] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:42:15,948][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@12de9e85]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:42:15,948][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 18:42:15,948][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@12de9e85] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:42:15,948][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@12de9e85] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 18:42:15,947][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@12de9e85] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:38:38,420][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ee6b99e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:38:38,421][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ee6b99e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:38:38,421][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ee6b99e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:38:38,421][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ee6b99e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:38:38,421][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ee6b99e]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:38:38,422][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:45:37,912][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@e7efa4a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:37,913][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@e7efa4a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:37,913][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@e7efa4a]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:37,913][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:45:37,913][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@e7efa4a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:37,912][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@e7efa4a] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:43,145][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@31ebb6db] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:43,146][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@31ebb6db] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:43,146][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@31ebb6db] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:43,145][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@31ebb6db] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:43,146][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@31ebb6db]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:45:43,147][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:49:18,480][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4d7da60e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:18,480][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4d7da60e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:18,480][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4d7da60e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:18,480][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4d7da60e] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:18,480][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@4d7da60e]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:18,481][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:49:28,137][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2e1eafdb] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:28,138][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2e1eafdb] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:28,138][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2e1eafdb] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:28,137][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2e1eafdb] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:28,138][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2e1eafdb]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:49:28,139][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:50:39,357][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3424559b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:50:39,357][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3424559b]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:50:39,358][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:50:39,357][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3424559b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:50:39,357][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3424559b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:50:39,357][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3424559b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:52:52,731][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@22b7f935] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:52:52,731][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@22b7f935] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:52:52,731][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@22b7f935] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:52:52,731][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@22b7f935] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:52:52,732][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@22b7f935]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:52:52,732][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:53:08,449][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1732b9af] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:08,450][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1732b9af] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:08,449][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1732b9af] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:08,449][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1732b9af] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:08,450][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1732b9af]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:08,450][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:53:12,401][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@614dab5c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:12,401][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@614dab5c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:12,401][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@614dab5c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:12,401][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@614dab5c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:12,401][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@614dab5c]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:12,402][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:53:32,892][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6e0df302] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:32,892][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6e0df302] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:32,892][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6e0df302] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:32,892][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6e0df302] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:32,892][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6e0df302]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:32,893][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:53:56,855][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ef23dd0] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:56,856][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ef23dd0] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:56,856][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ef23dd0] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:56,855][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ef23dd0] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:56,856][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@ef23dd0]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:53:56,857][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:54:02,422][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a23929d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:54:02,422][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a23929d]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:54:02,423][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 19:54:02,422][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a23929d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:54:02,422][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a23929d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:54:02,422][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5a23929d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:55:56,568][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d3bccea] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:55:56,569][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d3bccea] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:55:56,569][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d3bccea] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:55:56,568][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d3bccea] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:55:56,569][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d3bccea]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 19:55:56,570][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 20:12:37,001][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d2cc7e1] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:12:37,001][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d2cc7e1] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:12:37,001][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d2cc7e1] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:12:37,001][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d2cc7e1] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:12:37,001][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6d2cc7e1]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:12:37,002][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]
+[2015-01-03 20:37:13,207][DEBUG][action.search.type       ] [Orb] [product][1], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5178aff5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][1]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:37:13,207][DEBUG][action.search.type       ] [Orb] [product][4], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5178aff5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][4]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:37:13,207][DEBUG][action.search.type       ] [Orb] [product][3], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5178aff5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][3]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:37:13,207][DEBUG][action.search.type       ] [Orb] [product][0], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5178aff5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][0]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:37:13,208][DEBUG][action.search.type       ] [Orb] [product][2], node[05L9eN-YSQCJBs_dw99b2g], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5178aff5]
+org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"bool":{"must":[{"term":{"publish_status":4}},{"match_all":{}}]}},"facets":{},"from":-20,"size":0,"sort":{},"aggs":{"all_brands":{"terms":{"field":"brand_id","size":100000}}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:681)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:537)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:509)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:264)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [product][2]: query[+publish_status:[4 TO 4] +ConstantScore(*:*)],from[-1],size[-1]: Parse Failure [from is set to [-20] and is expected to be higher or equal to 0]
+	at org.elasticsearch.search.query.FromParseElement.parse(FromParseElement.java:38)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:665)
+	... 9 more
+[2015-01-03 20:37:13,208][DEBUG][action.search.type       ] [Orb] All shards failed for phase: [query]

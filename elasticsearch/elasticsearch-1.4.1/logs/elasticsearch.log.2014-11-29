@@ -1,0 +1,28 @@
+[2014-11-29 23:37:34,041][INFO ][node                     ] [Cottonmouth] version[1.4.1], pid[12519], build[89d3241/2014-11-26T15:49:29Z]
+[2014-11-29 23:37:34,041][INFO ][node                     ] [Cottonmouth] initializing ...
+[2014-11-29 23:37:34,057][INFO ][plugins                  ] [Cottonmouth] loaded [], sites []
+[2014-11-29 23:37:37,105][INFO ][node                     ] [Cottonmouth] initialized
+[2014-11-29 23:37:37,105][INFO ][node                     ] [Cottonmouth] starting ...
+[2014-11-29 23:37:37,239][INFO ][transport                ] [Cottonmouth] bound_address {inet[/127.0.0.1:9300]}, publish_address {inet[/127.0.0.1:9300]}
+[2014-11-29 23:37:37,255][INFO ][discovery                ] [Cottonmouth] elasticsearch/949aPLvhT56su6ebdTgO6Q
+[2014-11-29 23:37:41,034][INFO ][cluster.service          ] [Cottonmouth] new_master [Cottonmouth][949aPLvhT56su6ebdTgO6Q][iZ25bfoofwoZ][inet[/127.0.0.1:9300]], reason: zen-disco-join (elected_as_master)
+[2014-11-29 23:37:41,054][INFO ][http                     ] [Cottonmouth] bound_address {inet[/127.0.0.1:9200]}, publish_address {inet[/127.0.0.1:9200]}
+[2014-11-29 23:37:41,055][INFO ][node                     ] [Cottonmouth] started
+[2014-11-29 23:37:41,075][INFO ][gateway                  ] [Cottonmouth] recovered [0] indices into cluster_state
+[2014-11-29 23:38:05,048][INFO ][cluster.metadata         ] [Cottonmouth] [product] creating index, cause [api], shards [5]/[1], mappings []
+[2014-11-29 23:38:05,520][DEBUG][action.admin.indices.mapping.put] [Cottonmouth] failed to put mappings on indices [[product]], type [products]
+org.elasticsearch.index.mapper.MapperParsingException: Analyzer [ik] not found for field [q]
+	at org.elasticsearch.index.mapper.core.TypeParsers.parseField(TypeParsers.java:220)
+	at org.elasticsearch.index.mapper.core.StringFieldMapper$TypeParser.parse(StringFieldMapper.java:153)
+	at org.elasticsearch.index.mapper.object.ObjectMapper$TypeParser.parseProperties(ObjectMapper.java:290)
+	at org.elasticsearch.index.mapper.object.ObjectMapper$TypeParser.parseObjectOrDocumentTypeProperties(ObjectMapper.java:214)
+	at org.elasticsearch.index.mapper.object.RootObjectMapper$TypeParser.parse(RootObjectMapper.java:136)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:209)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:190)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:444)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:329)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:153)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
