@@ -15,6 +15,12 @@
     "serve-favicon": "~2.2.0",
     "request": "*",
     "mysql": "*",
-    "async": "*"
+    "async": "*",
+    "cheerio": "~0.18.0",
+    "encoding": "*",
+    "iconv-lite": "*",
+    "needle": "*",
+    "urlencode2": "*",
+    "url": "*"
   }
 }

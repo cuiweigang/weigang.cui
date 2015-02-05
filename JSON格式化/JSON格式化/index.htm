@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="jquery-ui.css" rel="stylesheet" type="text/css">
+		<script src="jquery.js"></script>
+		<script src="jquery-ui.js"></script>
+		<script src="jquery_002.js"></script>
+		<script src="jsformat.js"></script>
+		<script>
+			$(function() {
+				$('#json').button().click(function() {
+
+					$('#json_text').format({
+						method: 'json'
+					});
+
+				});
+
+				$('#jsonmin').button().click(function() {
+
+					$('#json_text').format({
+						method: 'jsonmin'
+					});
+
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div aria-hidden="false" aria-expanded="true" style="display: block;"
+		role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom"
+		aria-labelledby="ui-id-4" id="tabs-4">
+			<textarea id="json_text" rows="20" cols="135">
+			</textarea>
+			<br>
+			<button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+			id="json">
+				<span class="ui-button-text">
+					格式化
+				</span>
+			</button>
+			<button aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+			id="jsonmin">
+				<span class="ui-button-text">
+					压缩
+				</span>
+			</button>
+		</div>
+	</body>
+
+</html>
