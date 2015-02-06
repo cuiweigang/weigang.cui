@@ -1,0 +1,17 @@
+{
+  "appenders": [
+    {
+      "type": "console",
+      "category": "console"
+    },
+    {
+      "type": "dateFile",
+      "filename": "logs/",
+      "pattern": "yyyyMMddhh.txt",
+      "absolute": false,
+      "alwaysIncludePattern": true,
+      "category": "wechat"
+    }
+  ],
+  "levels": {"wechat": "ALL"}
+}

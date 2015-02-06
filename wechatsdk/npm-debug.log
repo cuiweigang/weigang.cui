@@ -1,0 +1,234 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink D:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'H:\\GitHub\\weigang.cui\\wechatsdk',
+6 verbose install   [ 'body-parser',
+6 verbose install     'cookie-parser',
+6 verbose install     'debug',
+6 verbose install     'ejs',
+6 verbose install     'express',
+6 verbose install     'morgan',
+6 verbose install     'serve-favicon',
+6 verbose install     'config',
+6 verbose install     'log' ] ]
+7 info preinstall wechatsdk@0.0.0
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping body-parser@~1.10.1 H:\GitHub\weigang.cui\wechatsdk
+10 verbose already installed skipping cookie-parser@~1.3.3 H:\GitHub\weigang.cui\wechatsdk
+11 verbose already installed skipping debug@~2.1.1 H:\GitHub\weigang.cui\wechatsdk
+12 verbose already installed skipping ejs@~2.1.4 H:\GitHub\weigang.cui\wechatsdk
+13 verbose already installed skipping express@~4.11.0 H:\GitHub\weigang.cui\wechatsdk
+14 verbose already installed skipping morgan@~1.5.1 H:\GitHub\weigang.cui\wechatsdk
+15 verbose already installed skipping serve-favicon@~2.2.0 H:\GitHub\weigang.cui\wechatsdk
+16 verbose cache add [ 'config@*', null ]
+17 verbose cache add name=undefined spec="config@*" args=["config@*",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'config@*',
+18 verbose parsed url   path: 'config@*',
+18 verbose parsed url   href: 'config@*' }
+19 verbose cache add [ 'log@log', null ]
+20 verbose cache add name=undefined spec="log@log" args=["log@log",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'log@log',
+21 verbose parsed url   path: 'log@log',
+21 verbose parsed url   href: 'log@log' }
+22 verbose cache add name="config" spec="*" args=["config","*"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '*',
+23 verbose parsed url   path: '*',
+23 verbose parsed url   href: '*' }
+24 verbose addNamed [ 'config', '*' ]
+25 verbose addNamed [ null, '*' ]
+26 verbose cache add name="log" spec="log" args=["log","log"]
+27 verbose parsed url { protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: 'log',
+27 verbose parsed url   path: 'log',
+27 verbose parsed url   href: 'log' }
+28 verbose addNamed [ 'log', 'log' ]
+29 verbose addNamed [ null, null ]
+30 silly lockFile 81d92f6a-config config@*
+31 verbose lock config@* C:\Users\cuiweigang\AppData\Roaming\npm-cache\81d92f6a-config.lock
+32 silly lockFile d45258fc-log-log log@log
+33 verbose lock log@log C:\Users\cuiweigang\AppData\Roaming\npm-cache\d45258fc-log-log.lock
+34 silly addNameRange { name: 'config', range: '*', hasData: false }
+35 info addNameTag [ 'log', 'log' ]
+36 verbose request where is /config
+37 verbose request registry https://registry.npmjs.org/
+38 verbose request id c078ed7c95c5ff3c
+39 verbose url raw /config
+40 verbose url resolving [ 'https://registry.npmjs.org/', './config' ]
+41 verbose url resolved https://registry.npmjs.org/config
+42 verbose request where is https://registry.npmjs.org/config
+43 info trying registry request attempt 1 at 14:01:36
+44 verbose etag "DT3F47BPZQSB7FMVXNF9GDK6G"
+45 http GET https://registry.npmjs.org/config
+46 verbose request where is /log
+47 verbose request registry https://registry.npmjs.org/
+48 verbose url raw /log
+49 verbose url resolving [ 'https://registry.npmjs.org/', './log' ]
+50 verbose url resolved https://registry.npmjs.org/log
+51 verbose request where is https://registry.npmjs.org/log
+52 info trying registry request attempt 1 at 14:01:36
+53 verbose etag "1DW8E8F930MT828CAFKI698C0"
+54 http GET https://registry.npmjs.org/log
+55 http 304 https://registry.npmjs.org/config
+56 silly registry.get cb [ 304,
+56 silly registry.get   { date: 'Fri, 06 Feb 2015 06:01:32 GMT',
+56 silly registry.get     server: 'Apache',
+56 silly registry.get     via: '1.1 varnish',
+56 silly registry.get     'last-modified': 'Fri, 06 Feb 2015 06:01:17 GMT',
+56 silly registry.get     'cache-control': 'max-age=60',
+56 silly registry.get     etag: '"DT3F47BPZQSB7FMVXNF9GDK6G"',
+56 silly registry.get     age: '15',
+56 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+56 silly registry.get     'x-cache': 'HIT',
+56 silly registry.get     'x-cache-hits': '2',
+56 silly registry.get     'x-timer': 'S1423202492.692418,VS0,VE0',
+56 silly registry.get     vary: 'Accept',
+56 silly registry.get     'content-length': '0',
+56 silly registry.get     'keep-alive': 'timeout=10, max=50',
+56 silly registry.get     connection: 'Keep-Alive' } ]
+57 verbose etag https://registry.npmjs.org/config from cache
+58 silly addNameRange number 2 { name: 'config', range: '*', hasData: true }
+59 silly addNameRange versions [ 'config',
+59 silly addNameRange   [ '0.2.3',
+59 silly addNameRange     '0.2.4',
+59 silly addNameRange     '0.2.5',
+59 silly addNameRange     '0.2.7',
+59 silly addNameRange     '0.2.8',
+59 silly addNameRange     '0.2.9',
+59 silly addNameRange     '0.4.0',
+59 silly addNameRange     '0.4.1',
+59 silly addNameRange     '0.4.2',
+59 silly addNameRange     '0.4.3',
+59 silly addNameRange     '0.4.4',
+59 silly addNameRange     '0.4.5',
+59 silly addNameRange     '0.4.6',
+59 silly addNameRange     '0.4.7',
+59 silly addNameRange     '0.4.8',
+59 silly addNameRange     '0.4.9',
+59 silly addNameRange     '0.4.10',
+59 silly addNameRange     '0.4.11',
+59 silly addNameRange     '0.4.12',
+59 silly addNameRange     '0.4.13',
+59 silly addNameRange     '0.4.14',
+59 silly addNameRange     '0.4.15',
+59 silly addNameRange     '0.4.16',
+59 silly addNameRange     '0.4.17',
+59 silly addNameRange     '0.4.18',
+59 silly addNameRange     '0.4.19',
+59 silly addNameRange     '0.4.20',
+59 silly addNameRange     '0.4.21',
+59 silly addNameRange     '0.4.22',
+59 silly addNameRange     '0.4.23',
+59 silly addNameRange     '0.4.24',
+59 silly addNameRange     '0.4.25',
+59 silly addNameRange     '0.4.26',
+59 silly addNameRange     '0.4.27',
+59 silly addNameRange     '0.4.28',
+59 silly addNameRange     '0.4.29',
+59 silly addNameRange     '0.4.30',
+59 silly addNameRange     '0.4.31',
+59 silly addNameRange     '0.4.32',
+59 silly addNameRange     '0.4.33',
+59 silly addNameRange     '0.4.34',
+59 silly addNameRange     '0.4.35',
+59 silly addNameRange     '0.4.36',
+59 silly addNameRange     '0.4.37',
+59 silly addNameRange     '1.0.0',
+59 silly addNameRange     '1.0.1',
+59 silly addNameRange     '1.0.2',
+59 silly addNameRange     '1.1.0',
+59 silly addNameRange     '1.2.0',
+59 silly addNameRange     '1.2.1',
+59 silly addNameRange     '1.2.2',
+59 silly addNameRange     '1.2.3',
+59 silly addNameRange     '1.2.4',
+59 silly addNameRange     '1.3.0',
+59 silly addNameRange     '1.4.0',
+59 silly addNameRange     '1.5.0',
+59 silly addNameRange     '1.6.0',
+59 silly addNameRange     '1.7.0',
+59 silly addNameRange     '1.8.0',
+59 silly addNameRange     '1.8.1',
+59 silly addNameRange     '1.9.0',
+59 silly addNameRange     '1.10.0' ] ]
+60 verbose addNamed [ 'config', '1.10.0' ]
+61 verbose addNamed [ '1.10.0', '1.10.0' ]
+62 silly lockFile c610f93d-config-1-10-0 config@1.10.0
+63 verbose lock config@1.10.0 C:\Users\cuiweigang\AppData\Roaming\npm-cache\c610f93d-config-1-10-0.lock
+64 silly lockFile c610f93d-config-1-10-0 config@1.10.0
+65 silly lockFile c610f93d-config-1-10-0 config@1.10.0
+66 silly lockFile 81d92f6a-config config@*
+67 silly lockFile 81d92f6a-config config@*
+68 http 304 https://registry.npmjs.org/log
+69 silly registry.get cb [ 304,
+69 silly registry.get   { date: 'Fri, 06 Feb 2015 06:01:32 GMT',
+69 silly registry.get     server: 'Apache',
+69 silly registry.get     via: '1.1 varnish',
+69 silly registry.get     'last-modified': 'Fri, 06 Feb 2015 05:58:38 GMT',
+69 silly registry.get     'cache-control': 'max-age=60',
+69 silly registry.get     etag: '"1DW8E8F930MT828CAFKI698C0"',
+69 silly registry.get     age: '58',
+69 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+69 silly registry.get     'x-cache': 'HIT',
+69 silly registry.get     'x-cache-hits': '2',
+69 silly registry.get     'x-timer': 'S1423202492.852846,VS0,VE0',
+69 silly registry.get     vary: 'Accept',
+69 silly registry.get     'content-length': '0',
+69 silly registry.get     'keep-alive': 'timeout=10, max=50',
+69 silly registry.get     connection: 'Keep-Alive' } ]
+70 verbose etag https://registry.npmjs.org/log from cache
+71 silly lockFile d45258fc-log-log log@log
+72 silly lockFile d45258fc-log-log log@log
+73 error notarget No compatible version found: log@'log'
+73 error notarget Valid install targets:
+73 error notarget ["1.0.0","1.1.0","1.1.1","1.2.0","1.3.0","1.3.1","1.4.0"]
+73 error notarget
+73 error notarget This is most likely not a problem with npm itself.
+73 error notarget In most cases you or one of your dependencies are requesting
+73 error notarget a package version that doesn't exist.
+74 error System Windows_NT 6.2.9200
+75 error command "D:\\Program Files\\nodejs\\\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+76 error cwd H:\GitHub\weigang.cui\wechatsdk
+77 error node -v v0.10.33
+78 error npm -v 1.4.28
+79 error code ETARGET
+80 verbose exit [ 1, true ]
