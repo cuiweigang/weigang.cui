@@ -5,13 +5,9 @@ var base = require("../module/base");
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-
-    // 获取AssessToken
-    base.getIps(function (data) {
-        console.log(data);
-        res.render('index', {title: 'Express'});
-    });
-
+    base.checkSignature(req.query, function (result) {
+        res.send(result);
+    })
 });
 
 module.exports = router;

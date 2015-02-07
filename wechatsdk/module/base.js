@@ -6,11 +6,43 @@ var fs = require("fs");
 var config = require("config");
 var querystring = require("querystring");
 var log = require("../module/log");
+var crypto = require('crypto');
 
 var tokenFile = "token.txt";
 
+var wxConfig = config.get("wechat");
+
 // 基础模块
 var base = {};
+
+/**
+ * 验签操作
+ * @param query
+ * @param callback
+ */
+base.checkSignature = function (query, callback) {
+
+    // 获取参数
+    var signature = query.signature;
+    var timestamp = query.timestamp;
+    var nonce = query.nonce;
+    var echostr = query.echostr;
+
+    // 数组排序
+    var arr = [nonce, timestamp, wxConfig.token].sort();
+
+    var sha1 = crypto.createHash('sha1');
+    sha1.update(arr.join(''));
+
+    var sign = sha1.digest("hex");
+    if (sign != signature) {
+        echostr = "error";
+    }
+
+    log.info("signatur:%s timestamp:%s nonce:%s echostr:%s sha1str:%s", signature, timestamp, nonce, echostr, sign);
+
+    return callback(echostr);
+};
 
 /**
  * 获取AccessToken
