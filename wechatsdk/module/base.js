@@ -39,7 +39,7 @@ base.checkSignature = function (query, callback) {
         echostr = "error";
     }
 
-    log.info("signatur:%s timestamp:%s nonce:%s echostr:%s sha1str:%s", signature, timestamp, nonce, echostr, sign);
+    log.info("signatur:%s timestamp:%s nonce:%s echostr:%s sha1:%s token:%s", signature, timestamp, nonce, echostr, sign, wxConfig.token);
 
     return callback(echostr);
 };

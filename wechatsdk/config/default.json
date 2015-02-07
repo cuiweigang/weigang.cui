@@ -2,7 +2,7 @@
   "wechat": {
     "appid": "wxe978dc1e4deac224",
     "appsecret": "4f9ec2307184f17180b36bb6f358150b",
-    "token": "token"
+    "token": "1234567890"
   },
   "log": {
     "level": "debug"

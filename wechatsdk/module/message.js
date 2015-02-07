@@ -6,17 +6,18 @@
 var base = require("./base");
 var httpReq = require("./httpReq");
 var xml2js = require("xml2js");
-var ejs = require(ejs);
+var ejs = require("ejs");
+var log = require("./log")
 
 // 文本消息模板
 var textTemplate = "<xml>" +
-    "<ToUserName><![CDATA[toUser]]></ToUserName>" +
-    "<FromUserName><![CDATA[fromUser]]></FromUserName>" +
-    "<CreateTime>1348831860</CreateTime>" +
+    "<ToUserName><![CDATA[<%- ToUserName %>]]></ToUserName>" +
+    "<FromUserName><![CDATA[gh_33453d6f60fa]]></FromUserName>" +
+    "<CreateTime>12345678</CreateTime>" +
     "<MsgType><![CDATA[text]]></MsgType>" +
-    "<Content><![CDATA[this is a test]]></Content>" +
-    "<MsgId>1234567890123456</MsgId>" +
-    "</xml>";
+    "<Content><![CDATA[<%- Content%>]]></Content>" +
+    "</xml> ";
+
 
 // 图片消息模板
 var imageTemplate = "<xml>" +
@@ -66,7 +67,22 @@ var message = {};
  * @param xml
  * @param callback
  */
-message.jieshou = function (xml, callback) {
+message.reply = function (xml, callback) {
+
+    xml2js.parseString(xml, {explicitArray: false, IgnoreAttrs: true}, function (err, result) {
+
+        var replyContent = textCompileTemplate(
+            {
+                "ToUserName": result.xml.FromUserName,
+                "Content": result.xml.Content
+            }
+        );
+
+        console.log(replyContent);
+        log.info("回复信息：%", replyContent);
+        return callback(replyContent);
+    });
+
 
 };
 
