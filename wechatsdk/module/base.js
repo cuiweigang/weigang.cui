@@ -19,8 +19,11 @@ var base = {};
  */
 base.getAccessToken = function (callback) {
 
+
     // 从文件中获取,如果没有则调用网络
     getFileToken(function (token) {
+
+
         // 当token还未过期，直接返回
         if (token.expires > new Date()) {
             log.info("token还未过期：%s", JSON.stringify(token));
@@ -55,6 +58,8 @@ base.getAccessToken = function (callback) {
  */
 function getFileToken(callback) {
     var token = {"token": "", expires: new Date("2015-01-01")};
+
+
     fs.exists(tokenFile, function (exists) {
         if (exists) {
             // 当文件存在时
@@ -65,6 +70,8 @@ function getFileToken(callback) {
                 }
                 return callback(token);
             });
+        } else {
+            return callback(token);
         }
     });
 }

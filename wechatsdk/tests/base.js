@@ -3,12 +3,13 @@
  */
 var base = require("../module/base");
 
+
 /**
  * 获取AccessToken
  * */
-base.getAccessToken(function(token){
+base.getAccessToken(function (token) {
     console.log("access_token:");
-    console.log(accesstoken);
+    console.log(token);
 });
 
 /**
