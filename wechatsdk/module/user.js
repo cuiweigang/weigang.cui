@@ -1,10 +1,11 @@
 /**
  * Created by cuiweigang on 2/6 0006.
  */
-
+var config = require("config");
 var base = require("./base");
 var request = require("request");
 var httpReq = require("./httpReq");
+var wxConfig = config.get("wechat");
 
 /***
  * 用户模块
@@ -156,6 +157,22 @@ user.group.batchMoveUser = function (openids, groupId, callback) {
         httpReq.postJson(url, jsonData, function (body) {
             return callback(body);
         });
+    });
+};
+
+user.auth = function (req, res, callback) {
+    var code = req.query.code;
+    var state = req.query.state;
+
+    if (!code) {
+        return callback(null);
+    }
+
+    var getaccess_tokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=" + wxConfig.appid + "&secret=" + wxConfig.appsecret + "&code=" + code + "&grant_type=authorization_code";
+
+    // 获取access_token
+    httpReq.get(getaccess_tokenUrl, function (error, res, body) {
+        return callback(body);
     });
 };
 

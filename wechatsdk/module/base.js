@@ -33,13 +33,13 @@ base.checkSignature = function (query, callback) {
 
     var sha1 = crypto.createHash('sha1');
     sha1.update(arr.join(''));
-
     var sign = sha1.digest("hex");
+
+    log.info("echostr:%s \r\n signatur:%s \r\n timestamp:%s \r\n nonce:%s \r\n echostr:%s \r\n sha1:%s \r\n token:%s", echostr, signature, timestamp, nonce, echostr, sign, wxConfig.token);
+
     if (sign != signature) {
         echostr = "error";
     }
-
-    log.info("signatur:%s timestamp:%s nonce:%s echostr:%s sha1:%s token:%s", signature, timestamp, nonce, echostr, sign, wxConfig.token);
 
     return callback(echostr);
 };
