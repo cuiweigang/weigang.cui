@@ -6,9 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var user = require('./routes/user');
 var active = require("./routes/active");
 var passport = require("./routes/passport");
+var order = require("./routes/order");
 
 var app = express();
 
@@ -40,9 +41,10 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/user', user);
 app.use("/active", active);
 app.use("/passport", passport);
+app.use("/order", order);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
