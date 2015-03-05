@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>基于Bootstrap的CSS3登录表单DEMO演示</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/stylesheets/jquery-ui.css'>
+    <link rel="stylesheet" href="/stylesheets/style.css" media="screen" type="text/css"/>
+</head>
+
+<body>
+<body class="login-page">
+<div class="login-form">
+    <div class="login-content">
+        <div class="form-login-error">
+            <h3>Invalid login</h3>
+
+            <p>Enter <strong>demo</strong>/<strong>demo</strong> as login and password.</p>
+        </div>
+        <form method="post" role="form" id="form_login" action="">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Username" required="required"
+                           autocomplete="off"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="fa fa-key"></i>
+                    </div>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" required="required"
+                           autocomplete="off"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block btn-login">
+                    <i class="fa fa-sign-in"></i>
+                    Login In
+                </button>
+            </div>
+            <!-- Implemented in v1.1.4 -->
+            <div class="form-group">
+                <em>- or -</em>
+            </div>
+
+            <!--
+
+            You can also use other social network buttons
+            <div class="form-group">
+
+                <button type="button" class="btn btn-default btn-lg btn-block btn-icon icon-left twitter-button">
+                    Login with Twitter
+                    <i class="entypo-twitter"></i>
+                </button>
+
+            </div>
+
+            <div class="form-group">
+
+                <button type="button" class="btn btn-default btn-lg btn-block btn-icon icon-left google-button">
+                    Login with Google+
+                    <i class="entypo-gplus"></i>
+                </button>
+
+            </div> -->
+        </form>
+
+    </div>
+</div>
+</div>
+</body>
+
+</html>

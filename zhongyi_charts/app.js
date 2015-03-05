@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var active = require("./routes/active")
+var active = require("./routes/active");
+var passport = require("./routes/passport");
 
 var app = express();
 
@@ -23,9 +24,25 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(function (req, res, next) {
+    if (req.url.toLowerCase().indexOf("passport") >= 0) {
+        return next();
+    }
+
+    var name = req.cookies.name;
+    if (name == 'cui') {
+        next();
+    }
+    else {
+        var redirectUrl = "/passport";
+        res.redirect(redirectUrl);
+    }
+});
+
 app.use('/', routes);
 app.use('/users', users);
 app.use("/active", active);
+app.use("/passport", passport);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

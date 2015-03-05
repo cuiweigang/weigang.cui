@@ -19,7 +19,12 @@ function Exist(array, value) {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Express'});
+    // res.cookie("name", "nihao", {"httpOnly": true, maxAge: 60000});
+    res.render('index', {title: '数据统计'});
+});
+
+router.get("/t", function (req, res) {
+    res.send("test");
 });
 
 // 统计品牌商品数
