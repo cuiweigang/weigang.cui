@@ -10,7 +10,8 @@ namespace demo
     /// </summary>
     public class Producer
     {
-        private CSRedis.RedisClient client = new CSRedis.RedisClient("192.92.242.54");
+
+        private CSRedis.RedisClient client = new CSRedis.RedisClient(DB.RedisConnection);
 
         public void Run()
         {

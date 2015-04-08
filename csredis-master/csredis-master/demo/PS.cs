@@ -22,7 +22,7 @@ namespace demo
             {
                 while (true)
                 {
-                    using (var redis = new RedisClient("192.92.242.54"))
+                    using (var redis = new RedisClient(DB.RedisConnection))
                     {
                         redis.Publish("channel", "message" + DateTime.Now.ToString("f"));
                         redis.Publish("channel2", "message" + DateTime.Now.ToString("f"));
@@ -45,7 +45,7 @@ namespace demo
         {
             var thread = new System.Threading.Thread(() =>
             {
-                using (var redis = new RedisClient("192.92.242.54"))
+                using (var redis = new RedisClient(DB.RedisConnection))
                 {
                     // 接收到消息的处理事件
                     redis.SubscriptionReceived += redis_SubscriptionReceived;

@@ -43,6 +43,9 @@
     <DelaySign>true</DelaySign>
     <AssemblyOriginatorKeyFile>..\csredis.pub.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

@@ -32,8 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consumer.cs" />
+    <Compile Include="db.cs" />
+    <Compile Include="ExpandObject.cs" />
     <Compile Include="Producer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
